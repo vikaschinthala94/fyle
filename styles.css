@@ -1,0 +1,93 @@
+/* Add your custom styles here */
+
+/* Body margin and padding reset */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  /* You can add your global styles here */
+  
+  /* Styles for the section */
+  .bg-zinc-100 {
+    background-color: #ffffff; /* Adjust the color as needed */
+  }
+  
+  .text-red-500 {
+    color: #ff0000; /* Adjust the color as needed */
+  }
+  
+  .font-semibold {
+    font-weight: 600; /* Adjust the font weight as needed */
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem; /* Adjust the font size as needed */
+  }
+  
+  .font-bold {
+    font-weight: bold; /* Adjust the font weight as needed */
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  .gap-8 {
+    gap: 2rem; /* Adjust the gap size as needed */
+  }
+  
+  .bg-white {
+    background-color: #ffffff; /* Adjust the color as needed */
+  }
+  
+  .p-6 {
+    padding: 1.5rem; /* Adjust the padding as needed */
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem; /* Adjust the border radius as needed */
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Adjust the shadow as needed */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem; /* Adjust the margin as needed */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem; /* Adjust the font size as needed */
+  }
+  
+  .text-zinc-500 {
+    color: #757575; /* Adjust the color as needed */
+  }
+  

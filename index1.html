@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden { display: none; }
+    .popup-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 50;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .flex-row {
+      display: flex;
+      /* flex-direction: row; */
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-zinc-900 p-8">
+    <div class="text-red-500 font-bold">WHAT WE DO</div>
+    <div class="flex-row">
+      <div class="text-4xl font-extrabold mt-2 mr-4">SERVICES PROVIDE FOR YOU</div>
+      <div class="text-zinc-600 dark:text-zinc-400 mt-5 my-10">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac et purus. Morbi sed lacus nec risus finibus feugiat et fermentum.</div>
+    </div>
+    <div class="relative mt-8">
+      <div class="flex overflow-x-auto space-x-4 no-scrollbar">
+      <div class="w-64 h-64 flex-shrink-0 relative group">
+        <img
+          src="./src/appdev.jpg"
+          alt="App Development"
+          class="w-full h-full object-cover group-hover:hidden"
+        />
+        <div
+          class="absolute inset-0 bg-red-500 flex flex-col items-center justify-center text-white text-xl font-bold hidden group-hover:flex"
+        >          App DEVELOPMENT
+          <p class="mt-2 text-sm text-center">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.
+          </p>
+          <a
+            href="https://fylehq.com"
+            target="_blank"
+            class=" inline-block bg-white text-red-500 px-4 py-2 rounded"
+            >READ MORE</a>
+        </div>
+      </div>
+      <div class="w-64 h-64 flex-shrink-0 relative group">
+        <img
+          src="./src/pexels-flodahm-699459.jpg"
+          alt="Web Development"
+          class="w-full h-full object-cover group-hover:hidden"
+        />
+        <div
+          class="absolute inset-0 bg-red-500 flex flex-col items-center justify-center text-white text-xl font-bold hidden group-hover:flex"
+        >
+          WEB DEVELOPMENT
+          <p class="mt-2 text-sm text-center">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.
+          </p>
+          <a
+            href="https://fylehq.com"
+            target="_blank"
+            class="mt-4 inline-block bg-white text-red-500 px-4 py-2 rounded"
+            >READ MORE</a>
+        </div>
+      </div>
+      <div class="w-64 h-64 flex-shrink-0 relative group">
+        <img
+          src="./src/android.jpg"
+          alt="Android Development"
+          class="w-full h-full object-cover group-hover:hidden"
+        />
+        <div
+          class="absolute inset-0 bg-red-500 flex flex-col items-center justify-center text-white text-xl font-bold hidden group-hover:flex"
+        >
+          Android Dev
+          <p class="mt-2 text-sm text-center">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.
+          </p>
+          <a
+            href="https://fylehq.com"
+            target="_blank"
+            class="mt-4 inline-block bg-white text-red-500 px-4 py-2 rounded"
+            >READ MORE</a>
+        </div>
+      </div>
+      <div class="w-64 h-64 flex-shrink-0 relative group">
+        <img
+          src="./src/ios.jpg"
+          alt="iOS Development"
+          class="w-full h-full object-cover group-hover:hidden"
+        />
+        <div
+          class="absolute inset-0 bg-red-500 flex flex-col items-center justify-center text-white text-xl font-bold hidden group-hover:flex"
+        >
+          IOS DEVELOPMENT
+          <p class="mt-2 text-sm text-center">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.
+          </p>
+          <a
+            href="https://fylehq.com"
+            target="_blank"
+            class="mt-4 inline-block bg-white text-red-500 px-4 py-2 rounded"
+            >READ MORE</a>
+        </div>
+      </div>
+      <div class="w-64 h-64 flex-shrink-0 relative group">
+        <img
+          src="./src/software.jpg"
+          alt="Software Development"
+          class="w-full h-full object-cover group-hover:hidden"
+        />
+        <div
+          class="absolute inset-0 bg-red-500 flex flex-col items-center justify-center text-white text-xl font-bold hidden group-hover:flex"
+        >
+          Software DEVELOPMENT
+          <p class="mt-2 text-sm text-center">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.
+          </p>
+          <a
+            href="https://fylehq.com"
+            target="_blank"
+            class="mt-4 inline-block bg-white text-red-500 px-4 py-2 rounded"
+            >READ MORE</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="absolute bottom-5 left flex space-x-2 mt-4">
+      <button id="dot1" class="w-3 h-3 bg-red-500 rounded-full"></button>
+      <button id="dot2" class="w-3 h-3 bg-zinc-300 rounded-full"></button>
+      <button id="dot3" class="w-3 h-3 bg-zinc-300 rounded-full"></button>
+    </div>
+  
+    <script>
+      const buttons = document.querySelectorAll('.absolute.bottom-5.left button');
+      const slides = document.querySelectorAll('.flex.overflow-x-auto > div');
+      const dots = document.querySelectorAll('.absolute.bottom-5.left button');
+      let currentIndex = 0;
+  
+      buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+          slides[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+          buttons[currentIndex].classList.remove('bg-red-500');
+          buttons[currentIndex].classList.add('bg-zinc-300');
+          currentIndex = index;
+          buttons[currentIndex].classList.remove('bg-zinc-300');
+          buttons[currentIndex].classList.add('bg-red-500');
+        });
+      });
+  
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          if (index === 0) {
+            window.location.href = 'index1.html';
+          } else if (index === 1) {
+            window.location.href = 'index2.html';
+          } else {
+            window.location.href = 'index3.html';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
